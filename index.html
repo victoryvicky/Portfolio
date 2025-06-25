@@ -1,232 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>portfolio</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh's Portfolio</title>
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts for Better Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-        <nav>       
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#abo">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#edu">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-         <ul>
-            <span class="logo">Portfolio.</span>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#abo">About</a></li>
-            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-            <li class="hideOnMobile"><a href="#edu">Education</a></li>
-            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-         </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Vignesh's Portfolio</a>
+            <i id="hamburger" class="fas fa-bars hamburger"></i>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home" data-aos="fade-in" data-aos-delay="100">Home</a></li>
+                <li><a href="#about" data-aos="fade-in" data-aos-delay="200">About</a></li>
+                <li><a href="#skills" data-aos="fade-in" data-aos-delay="300">Skills</a></li>
+                <li><a href="#education" data-aos="fade-in" data-aos-delay="400">Education</a></li>
+                <li><a href="#contact" data-aos="fade-in" data-aos-delay="500">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <script>
-      function showSidebar() {
-         const sidebar=document.querySelector('.sidebar')
-         sidebar.style.display='flex'
-      }
-      function hideSidebar(){
-         const sidebar=document.querySelector('.sidebar')
-         sidebar.style.display='none'
-      }
-   </script>
-        <div class="main">
-        <div class="info">
-            <h3>Hi, I'm <span>Vignesh</span></h3>
-            <h1><span>FULL</span> STACK  <span>D</span>EVELOPER</h1>
-            <br>I am looking for a job</h3><br>
-            <a href="https://drive.google.com/file/d/1ePwrPOQBjlVVOXZpcyPNhhXNCqkPJpTu/view?usp=drivesdk">Download Resume</a>
-        </div>
-        <div class="img-box">
-            <img src="img6.jpg" alt="img">
-        </div>
-        <div class="icons">
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-        </div>
-    </div>
-</div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-<div class="empty">
 
-</div>
-    
-    <section id="abo">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content" data-aos="fade-up">
+            <div class="hero-text">
+                <h3>Hi, I'm <span>Vignesh</span></h3>
+                <h1>Web <span>Developer</span></h1>
+                <p>I'm passionate about creating modern and responsive websites.</p>
+                <a href="https://drive.google.com/file/d/1zybrTEPOPMI3DMOj38BU_tJ5v3wP9Lb4/view?usp=drivesdk" class="btn">Download Resume</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="img6.jpg" alt="Vignesh">
+            </div>
+        </div>
+    </section>
 
-        <div id="main-container">
-            <div class="image">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-content" data-aos="fade-right">
+            <div class="about-image">
                 <img src="img6.jpg" alt="Profile Image">
             </div>
-            <div class="content">
-                
-                <h1 data-aos="fade-left">
-                    <p id="about">About</p>
-                   <br>Hey I'm <span>Vignesh</span>
-                </h1>
-                <div class="typewriter">
-                    I am a <span class="typewriter-text">Web Developer</span>
-                </div>
-                <p>Energetic and motivated graduate with a Master’s degree in Computer Science, equipped with Problem-solving Skills. Seeking an entry-level position in Software Engineering where I can utilize my academic knowledge and personal experiences to contribute effectively, while further developing my skills in a dynamic work environment.</p>
-                
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h3>Hi, I'm <span>Vignesh</span></h3>
+                <p>I am a <span class="typewriter-text">Web Developer</span></p>
+                <p>With a background in Computer Science, I am passionate about developing dynamic, responsive, and user-friendly websites. My goal is to constantly learn and innovate in the ever-changing world of technology.</p>
                 <div class="social-links">
-                    <a href="https://github.com/victoryvicky"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/vignesh1009?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                 </div>
-                <div class="btn">
-                    <button>Hire me</button>
+                <br>
+                <a href="#contact" class="btn">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="sql.png" alt="SQL">
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up">
+                    <img src="microsoft.png" alt="Microsoft Office">
+                    <p>Microsoft Office</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-img">
+                        <img src="kap.jpg" alt="KAPV Hr.Sec School">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>KAPV Hr.Sec School</h3>
+                        <span>2017 - 2018</span>
+                        <p>Completed my 10th standard with 86%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-img">
+                        <img src="kap.jpg" alt="KAPV Hr.Sec School">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>KAPV Hr.Sec School</h3>
+                        <span>2018 - 2020</span>
+                        <p>Completed my Higher Secondary with 74%, focusing on Computer Science.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-img">
+                        <img src="Bhc.jpg" alt="Bishop Heber College">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bishop Heber College</h3>
+                        <span>2020 - 2023</span>
+                        <p>Bachelor's degree in Computer Science with 80%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-img">
+                        <img src="logo.png" alt="St. Joseph College">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>St. Joseph College</h3>
+                        <span>2023 - 2025</span>
+                        <p>Currently pursuing a Master's degree in Computer Science with 82%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <h3>Send a message</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 6369403476</p>
+                    <p><i class="fas fa-envelope"></i> victoryvicky10092002@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 72/3 Samayapuram, Trichy, Tamil Nadu</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Add this in <head> to load EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    })();
+</script>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+            <form id="contact-form" class="contact-form">
+                <h3>Send a message</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +91 6369403476</p>
+                <p><i class="fas fa-envelope"></i> victoryvicky10092002@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 72/3 Samayapuram, Trichy, Tamil Nadu</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_2mjgdgb', 'YOUR_TEMPLATE_ID', this)
+            .then(function () {
+                alert('Message sent successfully!');
+                document.getElementById('contact-form').reset();
+            }, function (error) {
+                console.log(error);
+                alert('Failed to send message. Please try again later.');
+            });
+    });
+</script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
-    </script>
-     </div>
-<section id="skills">
-    <div>
-        <div class="header">
-          <h1>My Skills</h1>
-        </div>
-        <div class="container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="html.png">
-                    </div>
-                    <h3>Html 5</h3>
-                </div>
-                
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="css.png">
-                    </div>
-                    <h3>Css 3</h3>
-                </div>
-                
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="js.png">
-                    </div>
-                    <h3>Java Script</h3>
-                </div>
-                
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="java.png">
-                    </div>
-                    <h3>Java</h3>
-                </div>
-                
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="sql.png">
-                    </div>
-                    <h3>Sql</h3>
-                </div>
-                
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="img">
-                        <img src="Microsoft.png">
-                    </div>
-                    <h3>MicroSoft Office</h3>
-                </div>
-                
-            </div>
-       </div>
-   </div>
-</section>
-<section id="edu">
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
 
-    <div class="timeline">
-        <p class="edu">Education</p>
-        <div class="contain left-container">
-            <img src="kap.jpg">
-            <div class="text-box">
-                <h2>KAPV Hr.Sec School</h2>
-                <small>2017 - 2018</small>
-                <p>I successfully completed my 10th standard with a percentage of 86.</p> 
-                <span class="left-container-arrow"></span>
-            </div>
-        </div>
-        <div class="contain right-container">
-            <img src="kap.jpg">
-            <div class="text-box">
-                <h2>KAPV Hr.Sec School</h2>
-                <small>2018 - 2020</small>
-                <p>I successfully completed my Higher Secondary with a percentage of 74, choosing the Computer Science group.</p> 
-                <span class="right-container-arrow"></span>
-            </div>
-        </div>
-        <div class="contain left-container">
-            <img src="Bhc.jpg">
-            <div class="text-box">
-                <h2>Bishop Heber College</h2>
-                <small>2020 - 2023</small>
-                <p>I successfully completed my Bachelor's degree in the Department of Computer Science with a percentage of 80%.</p>
-                <span class="left-container-arrow"></span> 
-            </div>
-        </div>
-        <div class="contain right-container">
-            <img src="logo.png">
-            <div class="text-box">
-                <h2>St. Joseph College</h2>
-                <small>2023 - 2025</small>
-                <p>I am pursuing a Master's Degree in the Department of Computer Science with a current percentage of 82%.</p> 
-                <span class="right-container-arrow"></span>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="contact">
-    <div class="contai">
-        <h2>Contact Us</h2>
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <h3>Send us a message</h3>
-                <form>
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="email" placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="Submit">Send Message</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p class="fas fa-phone">+91 6369403476</p>
-                <p class="fas fa-envelope">victoryvicky10092002@gmail.com</p>
-                <p class="fas fa-map-marker-alt">72/3 Samayapuram, Trichy, Tamil Nadu</p>
-            </div>
-        </div>
-    </div>
-</section>
+        // Hamburger menu functionality
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("nav-links");
+
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+            const links = navLinks.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("active");
+                });
+            });
+        });
+    </script>
 </body>
 </html>
